@@ -1,0 +1,14 @@
+app = "<mastodon-example>"
+
+[deploy]
+  release_command = "bundle exec rails db:schema:load db:seed"
+
+[env]
+  RAILS_ENV = "production"
+  DB_HOST='host'
+  DB_USER=''
+  DB_NAME='neondb'
+  DB_PASS='project=<project-id>;<password>'
+  DB_PORT = '5432'
+
+
